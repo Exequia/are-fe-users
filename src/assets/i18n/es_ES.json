@@ -1,0 +1,16 @@
+{
+  "common": {
+    "yes": "Sí",
+    "no": "No"
+  },
+  "login": {
+    "signIn": "Acceso",
+    "email": "Email",
+    "password": "Contraseña",
+    "rememberMe": "Recordarme",
+    "login": "Entrar",
+    "haveNotAccount": "Aun no tienes cuenta",
+    "signUp": "Registrarse",
+    "getNewPassword": "Conseguir una nueva contraseña"
+  }
+}

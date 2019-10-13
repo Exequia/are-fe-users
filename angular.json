@@ -15,7 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "ngx-build-plus:browser",
+          "builder": "ngx-build-plus:build",
           "options": {
             "outputPath": "dist/are-fe-users",
             "index": "src/index.html",
@@ -24,11 +24,14 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
             "scripts": [
-              {
-                "input": "node_modules/document-register-element/build/document-register-element.js"
-              }
+              "node_modules/jquery/dist/jquery.slim.min.js",
+              "src/assets/js/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
